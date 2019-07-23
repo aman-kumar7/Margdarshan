@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<title>Margdarshan-Sign Up</title>
+<link rel="stylesheet" href="style abc.css">
+<nav><a href="index.html">Home</a><a href="login.html">Login</a><a href="signup.html" class="active">Signup</a>
+<div class="dropdown">
+    <button class="dropbtn">Courses      
+    </button>
+    <div class="dropdown-content">
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="javascript.html">JavaScript</a>
+    </div>
+  </div><a href="about.html">About</a>
+</nav>  
+<center>
+</head>
+<body>
+<div class="login-box">
+<img src="loginman.png" class="loginman">
+<h3 style="color:#fff"><big>Sign Up</big></h3>
+<form>
+<p id="abc">
+First Name<br>
+  <input type="Firstname" name="Firstname" placeholder="Enter your name"><br>
+<br>
+Last Name<br>
+  <input type="Lastname" name="lastname" placeholder="Enter your last name"><br>
+<br>
+Create Username<br>
+  <input type="Username" name="Username" placeholder="Enter Username"><br>
+<br>
+Create Password<br>
+<input type="password" name="password" placeholder="Create Password" id="myInput"><br>
+<input type="checkbox" onclick="myFunction()"value="Show Password">
+<br>
+Phone Number<br>
+  <input type="phone no" name="phone no." placeholder="Max 10-digit" value="+91" ><br>
+<br>
+Email Id<br>
+  <input type="email id" name="email id" placeholder="eg. John27@gmail.com"><br>
+<br>
+Birthday<br>
+ <input type="date" class="bday"><br>
+Gender&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYour Course<br>
+<br>
+&nbsp&nbsp&nbsp&nbsp<select class="dropbtn1">
+<option class="drop-content" >Male</option>
+ <option class="drop-content" value=“Female">Female</option>
+<option class="drop-content" value=“Other">Other</option>
+ </select>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select class="dropbtn1"> 
+<option class="drop-content" value=“12th" selected>12th</option>
+ <option class="drop-content" value=“Graduation">graduation</option>
+<option class="drop-content" value=“After Graduation">after graduation</option>
+ </select><br>
+<br>
+<br>
+<input type="submit" onclick="abc()" value="Submit">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" name="reset" value="Reset" /> 
+<div class="container signin">
+    <p>Already have an account? <a href="login.html">Sign in</a></p>
+  </div>
+</form>
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+function abc() 
+{
+    var retVal = confirm("Do you want to continue ?");
+               if( retVal == true ){
+               alert("Your account is created successfully");
+                  return true;
+               }
+               else{
+                  alert("Sign-up failed. Try again");
+                  return false;
+               }
+}
+</script>
+</body>
+</html>
+ 

@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+body{
+    background: url(bg_2.jpg);
+    background-size:cover;
+    font-family: sans-serif;
+margin:0;
+}
+nav{
+background-color:black;
+text-align:left;
+position:fixed;
+z-index:2;
+width:100%;
+}
+body{
+margin:0;}
+
+nav a
+{
+padding:1vw;
+display:inline-block;
+text-decoration:none;
+color:white;
+font-size:18px;
+}
+nav a:hover{
+background-color: rgb(255,255,255,0.5);
+color:#ffffff;
+}
+
+.active{
+  background-color:green;
+color:white;
+   
+}
+
+</style>
+<head>
+    <title>Forget Password</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <nav><a href="index.html" class="active">Home</a><a href="login.html">Login</a><a href="signup.html">Signup</a>
+<div class="dropdown">
+    <button class="dropbtn">Courses      
+    </button>
+    <div class="dropdown-content"><center>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="javascript.html">JavaScript</a></center>
+    </div>
+  </div><a href="about.html">About</a>
+</nav>  
+</head>
+    <body>
+    <div class="login-box">
+            <form>
+            <h2>Forget Password</h2><br><br><br>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>New Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <p>Confirm Password</p>
+             <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="submit" value="Reset"><br>
+            &nbsp<a href="Home Page.html">Go back to Home</a>
+        </form>
+        </div>
+    </body>
+</html>

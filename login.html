@@ -1,0 +1,88 @@
+<html>
+<style>
+
+nav{
+margin:0;
+background-color:black;
+text-align:left;
+position:fixed;
+width:100%;
+z-index:2;
+}
+nav a
+{
+padding:1vw;
+display:inline-block;
+text-decoration:none;
+color:white;
+font-size:16px;
+}
+nav a:hover{
+background-color: rgb(255,255,255,0.5);
+color:#ffffff;
+}
+
+.active{
+  background-color:green;
+color:white;
+}
+@media screen and (max-width: 1000px) {
+.loginbtn
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 25%;
+    background: #4d4dff;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.cancelbtn
+{
+    border: none;
+    outline: none;
+    height: 45px;
+     width: 25%;
+    background: #4d4dff;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom:10px;
+}
+}
+</style>
+<head>
+    <title> Margdarshan.com- Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<nav><a href="index.html" >Home</a>
+<a href="login.html" class="active">Login</a>
+<a href="Signup.html">Signup</a>
+<div class="dropdown">
+    <button class="dropbtn">Courses      
+    </button>
+    <div class="dropdown-content">
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="javascript.html">JavaScript</a>
+    </div>
+  </div>s<a href="about.html">About</a>
+</nav>  
+
+</head>
+    <body>
+    <div class="login-box">
+        <h2>Login </h2> 
+            <form>
+            <p>Username</p>
+            <input type="text" name="Username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="Password" name="Password" placeholder="Enter Password">
+            <button type="button" class="loginbtn" onclick="f2()" value="Login">Login</button>
+            <a href="margdarshan.html"><button type="button" class="cancelbtn">Cancel</button></a>
+            &nbsp<br><a href="forget.html">Forget Password</a>&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+            <a href="margdarshan.html">Create Account</a>
+        </form>
+        </div>
+    </body>
+</html>
